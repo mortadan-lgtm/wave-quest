@@ -625,7 +625,7 @@ const STAGE_IDS = STAGES.map(s => s.id);
 
 /* ---------- storage: one record per player on this device ---------- */
 const KEY = 'waveQuest.v1';
-const BOARD_URL = 'https://script.google.com/macros/s/AKfycbzkQiEjXQtNV_qusiNomnWGQP_wt9fkTLJ-rHWzIhEEDCJd62U2YoLZc4-Nlpthlf25/exec';             // Google Apps Script web app that holds the shared scoreboard
+const BOARD_URL = 'https://script.google.com/macros/s/AKfycbzlBGEw1mdQISWen_zudoG1lVUI56ogN6MwBUdExaA4jJSS0MfrFc28MbcMY7E98haD/exec';             // Google Apps Script web app that holds the shared scoreboard
 const ONLINE = /^https?:\/\//.test(BOARD_URL);
 let store = {current:null, players:{}, round:null};
 try { const raw = localStorage.getItem(KEY); if (raw) store = Object.assign(store, JSON.parse(raw)); } catch(e) {}
